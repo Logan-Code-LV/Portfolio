@@ -9,15 +9,16 @@ body {
 .wrapper {
   display: flex;
   width: 1200px;
-  margin-top: 1%;
-  margin-left: 15%;
+  margin: 0 auto;
+  margin-top: 5%;
   align-items: center;
 }
 
-img {
-  width: 700px;
-  height: 600px;
+.wrapper img {
+  width: 600px;
+  height: 500px;
   border: solid 10px white;
+  z-index: 100;
 }
 
 .bio {
@@ -25,7 +26,7 @@ img {
   color: white;
   opacity: 0.8;
   width: 600px;
-  height: 650px;
+  height: 575px;
 }
 
 .bio1 {
@@ -43,6 +44,7 @@ img {
   width: 500px;
   margin: 0 auto;
   justify-content: space-around;
+  color: white;
 }
 
 .socialmedia a {
@@ -79,8 +81,8 @@ img {
 
 .box-area li:nth-child(2) {
   left: 12%;
-  width: 30px;
-  height: 30px;
+  width: 90px;
+  height: 90px;
   animation-delay: 1.5s;
   animation-duration: 10s;
 }
@@ -107,7 +109,7 @@ img {
   animation-delay: 0s;
 }
 
-.box-area li:nth-child(4) {
+.box-area li:nth-child(6) {
   left: 42%;
   width: 110px;
   height: 110px;
@@ -123,4 +125,22 @@ img {
     transform: translateY(-800px) rotate(360deg);
     opacity: 0;
   }
+}
+
+.projects {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.projects img {
+  margin: 5px;
+  border: 5px solid white;
+}
+
+h1 {
+  text-align: center;
+  color: white;
 }
