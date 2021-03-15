@@ -10,8 +10,13 @@ body {
 }
 
 .mainContainer {
-  width:auto;
   margin: 0 auto;
+}
+
+.mainimg {
+  @media screen and (max-width: 850px) {
+    align-self: center;
+  }
 }
 
 a {
@@ -27,11 +32,11 @@ img {
 
 .wrapper {
   display: flex;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  align-items: center;
   font-size: 18px;
-  @media screen and (max-width: 750px) {
+  justify-content: center;
+  @media screen and (max-width: 850px) {
     flex-direction: column;
   }
 }
@@ -40,8 +45,8 @@ img {
   width: auto;
   height: 500px;
   border: solid 3px white;
-  @media screen and (max-width: 750px) {
-    height:750px;
+  @media screen and (max-width: 850px) {
+    height:400px;
   }
 }
 
@@ -51,8 +56,9 @@ img {
   opacity: 0.8;
   width: 800px;
   z-index: 100;
-  @media screen and (max-width: 750px) {
-    width: 95%;
+  @media screen and (max-width: 850px) {
+    width: 100%;
+    margin-left:unset;
   }
 }
 
@@ -64,6 +70,19 @@ img {
 .bio1 {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
+  @media screen and (max-width: 1100px) {
+    margin-top:0px;
+  }
+  @media screen and (max-width: 850px) {
+    margin-top:80px;
+    width:unset;
+  }
+}
+
+.bio2 {
+  @media screen and (max-width: 850px) {
+    width:unset;
+  }
 }
 
 .bio1 h3 {
@@ -108,16 +127,13 @@ p {
     height:1685px;
   }
   @media screen and (max-width: 700px) {
-    height:3310px;
     width:107%;
   }
   @media screen and (max-width: 600px) {
-    height:3305px;
     width:125%
   }
   @media screen and (max-width: 500px) {
-    height:3305px;
-    width:145%;
+    width:190%;
   }
 }
 
@@ -128,7 +144,7 @@ p {
   width: 25px;
   height: 25px;
   background: rgba(255, 255, 255, 0.522);
-  animation: animate 10s linear infinite;
+  animation: animate 5s linear infinite;
   bottom: -150px;
   z-index: 1;
 }
@@ -281,4 +297,17 @@ i {
 
 .x {
   text-align: center;
+}
+
+.desktopImage {
+  @media screen and (max-width: 850px) {
+    display:none;
+  }
+}
+
+.mobileImage {
+  display:none;
+  @media screen and (max-width: 850px) {
+    display:block;
+  }
 }

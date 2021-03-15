@@ -16,8 +16,15 @@ body {
 }
 
 .mainContainer {
-  width: auto;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 850px) {
+  .mainimg {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 a {
@@ -35,15 +42,15 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-size: 18px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -58,9 +65,9 @@ img {
   border: solid 3px white;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   .wrapper img {
-    height: 750px;
+    height: 400px;
   }
 }
 
@@ -72,9 +79,10 @@ img {
   z-index: 100;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   .bio {
-    width: 95%;
+    width: 100%;
+    margin-left: unset;
   }
 }
 
@@ -86,6 +94,25 @@ img {
 .bio1 {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
+}
+
+@media screen and (max-width: 1100px) {
+  .bio1 {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .bio1 {
+    margin-top: 80px;
+    width: unset;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .bio2 {
+    width: unset;
+  }
 }
 
 .bio1 h3 {
@@ -149,22 +176,19 @@ p {
 
 @media screen and (max-width: 700px) {
   .box-area {
-    height: 3310px;
     width: 107%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .box-area {
-    height: 3305px;
     width: 125%;
   }
 }
 
 @media screen and (max-width: 500px) {
   .box-area {
-    height: 3305px;
-    width: 145%;
+    width: 190%;
   }
 }
 
@@ -175,8 +199,8 @@ p {
   width: 25px;
   height: 25px;
   background: rgba(255, 255, 255, 0.522);
-  -webkit-animation: animate 10s linear infinite;
-          animation: animate 10s linear infinite;
+  -webkit-animation: animate 5s linear infinite;
+          animation: animate 5s linear infinite;
   bottom: -150px;
   z-index: 1;
 }
@@ -378,5 +402,21 @@ i {
 
 .x {
   text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+  .desktopImage {
+    display: none;
+  }
+}
+
+.mobileImage {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .mobileImage {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
